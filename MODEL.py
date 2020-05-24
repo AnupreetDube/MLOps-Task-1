@@ -21,7 +21,11 @@ ytest=tc(ytest)
 model = seq()
 model.add(Conv2D(2, kernel_size=3, activation="relu", input_shape=(28,28,1)))
 
-#HYPERPARAMETERS : FilterSize, NbrOfConvLayers
+'''
+HYPERPARAMETERS : FilterSize, NbrOfConvLayers
+Initially we have taken 1 convolution layer and 4 filters/ kernel
+if the accuracy will be less than 90% then we will increase the number of kernels and convolution layers
+'''
 NbrOfConvLayers=1
 FilterSize=4
 for NbrOfConvLayers in range(NbrOfConvLayers):
