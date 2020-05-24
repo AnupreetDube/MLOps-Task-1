@@ -37,7 +37,7 @@ print("Accuracy : ", pred[1])
 
 #PUTTING THE ACCURACY DATA INTO A FILE 
 try:
-	f=open("/newdir/o.txt","w")
+	f=open("/accuracy/acc.txt","w")
 	f.write(str(int(pred[1])))
 except:
 	print(end="")
