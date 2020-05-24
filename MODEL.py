@@ -21,7 +21,7 @@ model.add(Conv2D(2, kernel_size=3, activation="relu", input_shape=(28,28,1)))
 
 #HYPERPARAMETERS : FilterSize, NbrOfConvLayers
 NbrOfConvLayers=1
-FilterSize=1
+FilterSize=4
 for NbrOfConvLayers in range(NbrOfConvLayers):
 	model.add(Conv2D(filters=FilterSize, kernel_size=3, activation="relu"))
 	FilterSize*=2
