@@ -41,4 +41,5 @@ try:
 	f.write(str(int(pred[1])))
 except:
 	print(end="")
-f.close()
+finally:
+	f.close()
